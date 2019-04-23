@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+	<meta charset="UTF-8">
+
+	<style type="text/css">
+	body{font-family: verdana; font-size: 16px; background-color:lightblue;}
+		input[type=name],input[type=email],textarea{
+			outline:none; transition: .2s all linear;	
+			display: flex;
+			padding: 8px;
+			width: 300px;
+			height: 20px;
+			border-radius: 4px;
+			border:1px solid silver;
+			~webkit-box-sizing border-box;
+			~moz-box-sizing border-box;
+			box-sizing border-box;
+		}
+		input,textarea{margin: 10px 0;}
+		div#global
+		{
+			background-color: #7A96EA; 
+			max-width: 480px;
+			margin: 0 auto;
+			border-radius: 4px;
+			border:3px;
+		}
+		div#form-content{
+			padding: 23px;
+		}
+		div#title
+		{color: #ffffff;
+		 font-weight:bold; 
+		 text-align: center; 
+		 box-shadow: 1px 0px 15px black;
+		 padding: 20px;
+		 font-size: 20px;
+		}
+		input[type=submit]
+		{
+			padding: 5px 10px 5px 10px;
+			background-color: blue;
+			border-radius: 4px;
+			border:1px solid;
+		    font-weight:bold;
+		    font-size: 20px;
+	        width: 120px;
+		    height: 40px;
+		    color: #ffffff;
+		}
+		textarea
+		{
+			height:100px;
+		}
+		input:focus,textarea:focus
+		{
+			border:1px solid black; 
+		} 
+		select
+		{
+			border-radius: 4px;
+			 border:3px;
+			  width: 320px;
+			   height: 30px;
+			    font-size: 15px;
+			    margin: 10px;
+		}
+	</style>
+	<title>form</title>
+</head>
+<body>
+	<div id="global">
+		<div id="title">Registration</div>
+		<div id="form-content" >
+			<center><form id="contact" method="post" action="https://fekra-form.000webhostapp.com/firebase/firebase.php" >
+				<input type="name" name="fname" placeholder="First name"  id="fname">
+ 
+				<input type="name" name="lname" placeholder="Last name" id="lname">
+
+				<input type="email" name="email" placeholder="E-mail" id="email">
+
+				<input type="name" name="phone" placeholder="phone" id="phone">
+
+				<input type="name" name="faculty" placeholder="faculty" id="faculty">
+
+				<input type="name" name="university" placeholder="university" id="university">
+				<input   max="7" min="1" type="name" name="Academic" placeholder="Choose Your Academic Year" required>
+				<select name="workshop1">
+				  <option>Fisrt Preference... </option>
+				  <option value="Web">Web</option>
+				  <option value="Java">Java</option>
+				  <option value="Android">Android</option>
+				  
+				</select>
+				<br>	
+
+				<select name="workshop2">
+				  <option>second Preference... </option>
+				  <option value="Web">Web</option>
+				  <option value="Java">Java</option>
+				  <option value="Android">Android</option>
+				  
+				</select>	
+				
+				<textarea name="message" placeholder="message" id="message"></textarea>
+				<input type="submit" name="send" value="Submit" id="contact-submit" data-submit="...Sending">
+			</form></center>
+
+		</div>
+</body>
+</html>
